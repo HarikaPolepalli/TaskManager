@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+
+        <h1>
+            <i class="fa-solid fa-list-check"></i>
+            Task Manager Pro
+        </h1>
+
+        <button id="themeToggle">
+            🌙
+        </button>
+
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats">
+
+        <div class="card">
+            <h2 id="totalTasks">0</h2>
+            <p>Total Tasks</p>
+        </div>
+
+        <div class="card">
+            <h2 id="completedTasks">0</h2>
+            <p>Completed</p>
+        </div>
+
+        <div class="card">
+            <h2 id="pendingTasks">0</h2>
+            <p>Pending</p>
+        </div>
+
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-section">
+
+        <div class="progress-bar">
+
+            <div
+            class="progress-fill"
+            id="progressFill">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search tasks...">
+
+    <!-- Input Section -->
+    <div class="input-section">
+
+        <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter task">
+
+        <!-- Priority -->
+        <select id="priority">
+
+            <option value="High">
+                🔴 High
+            </option>
+
+            <option value="Medium">
+                🟡 Medium
+            </option>
+
+            <option value="Low">
+                🟢 Low
+            </option>
+
+        </select>
+
+        <!-- Category -->
+        <select id="category">
+
+            <option value="Study">
+                📚 Study
+            </option>
+
+            <option value="Work">
+                💼 Work
+            </option>
+
+            <option value="Personal">
+                🏠 Personal
+            </option>
+
+            <option value="Health">
+                ❤️ Health
+            </option>
+
+        </select>
+
+        <!-- Due Date -->
+        <input
+        type="date"
+        id="dueDate">
+
+        <!-- Add Button -->
+        <button id="addBtn">
+
+            Add Task
+
+        </button>
+
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+
+        <button
+        class="filter-btn"
+        data-filter="all">
+
+            All
+
+        </button>
+
+        <button
+        class="filter-btn"
+        data-filter="completed">
+
+            Completed
+
+        </button>
+
+        <button
+        class="filter-btn"
+        data-filter="pending">
+
+            Pending
+
+        </button>
+
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList">
+
+    </ul>
+
+    <!-- Clear All -->
+    <button id="clearAll">
+
+        Clear All Tasks
+
+    </button>
+
+    <!-- Footer -->
+    <footer>
+
+        Built with ❤️ by Harika
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
